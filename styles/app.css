@@ -1,0 +1,50 @@
+:root {
+  --softBlue: hsl(231, 69%, 60%);
+  --softRed: hsl(0, 94%, 66%);
+  --grayishBlue: hsl(229, 8%, 60%);
+  --veryDarkBlue: hsl(229, 31%, 21%);
+}
+
+html {
+  font-size: 62.5%; /*1 rem = 10px*/
+}
+body {
+  font-size: 1, 8rem;
+  font-family: 'Rubik', sans-serif;
+  line-height: 2;
+  color: var(--veryDarkBlue) !important;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+h2 {
+  font-size: 3.2rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.borde {
+  border: 1px solid red;
+}
+
+.veryDarkBlue {
+  color: var(--veryDarkBlue) !important;
+}
