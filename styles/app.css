@@ -11,7 +11,7 @@ html {
 body {
   font-size: 1, 8rem;
   font-family: 'Rubik', sans-serif;
-  line-height: 2;
+  line-height: 1.5;
   color: var(--veryDarkBlue) !important;
 }
 
@@ -46,6 +46,15 @@ h3 {
   text-align: center;
 }
 
+.sizeAccordion {
+  width: 50%;
+  margin-left: 25%;
+}
+.sizetitle {
+  width: 40%;
+  margin-left: 30%;
+}
+
 .borde {
   border: 1px solid red;
 }
@@ -55,4 +64,34 @@ h3 {
 }
 .grayishBlue {
   color: var(--grayishBlue) !important;
+}
+
+.bg-footer {
+  background-color: var(--veryDarkBlue);
+}
+
+.bg-danger {
+  background-color: var(--softRed) !important;
+}
+.bg-primary {
+  background-color: var(--softBlue) !important;
+}
+
+.verydarkblue {
+  color: var(--veryDarkBlue) !important;
+}
+
+.cuadrado {
+  background-color: var(--softBlue) !important;
+  border-radius: 115rem;
+  width: 80rem;
+  height: 30rem;
+  position: absolute;
+  right: 4rem;
+  z-index: 0;
+}
+
+.relativeq {
+  top: 1;
+  z-index: 1;
 }
