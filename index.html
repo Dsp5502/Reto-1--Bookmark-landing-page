@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- muestra el sitio correctamente según el dispositivo del usuario -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +27,7 @@
   <body>
     <!-- ----------------------navegacion------------ -->
     <header class="container my-5">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light text-center">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img src="images/logo-bookmark.svg" alt=""
@@ -46,29 +50,29 @@
             <ul class="navbar-nav me-5">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-uppercase verydarkblue mx-5 fs-5"
+                  class="nav-link active text-uppercase verydarkblue btnhov mx-5 fs-5"
                   aria-current="page"
-                  href="#"
+                  href="#features"
                   >Features</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-uppercase mx-5 verydarkblue fs-5"
+                  class="nav-link text-uppercase mx-5 verydarkblue btnhov fs-5"
                   href="#"
                   >Pricing</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-uppercase mx-5 verydarkblue fs-5"
-                  href="#"
+                  class="nav-link text-uppercase mx-5 verydarkblue btnhov fs-5"
+                  href="#contact"
                   >contact</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-uppercase btn btn-danger text-white px-5 mx-5 fs-5"
+                  class="nav-link text-uppercase btn-login px-5 mx-5 fs-5"
                   href="#"
                   >login</a
                 >
@@ -92,10 +96,10 @@
             instantly. Try it for free.
           </p>
           <div class="ps-5 ms-5">
-            <a class="btn btn-primary px-4 py-2 rounded cardt"
+            <a class="btn btn-primary px-4 py-3 rounded cardt ms-4 fs-3"
               >Get it on Chrome</a
             >
-            <a class="btn btn-white px-4 py-2 rounded cardt mx-4"
+            <a class="btn btn-white px-4 py-3 rounded cardt ms-4 fs-3"
               >Get it on Firefox</a
             >
           </div>
@@ -110,7 +114,7 @@
 
     <!-- ----------------------------------------------- -->
     <!-- ----------------------seccion 2 ---------------- -->
-    <section class="container py-5">
+    <section id="features" class="container py-5">
       <div class="d-flex flex-column justify-content-center text-center my-5">
         <h2 class="text-center">Features</h2>
         <p class="fs-3 grayishBlue">
@@ -128,9 +132,9 @@
         class="nav nav-pills mb-3 d-flex justify-content-center"
         role="tablist"
       >
-        <li class="nav-item mx-5" role="presentation">
+        <li class="nav-item mx-5" role="presentation  ">
           <a
-            class="active"
+            class="active text-decoration-none text-black botton-tab"
             id="pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#pills-home"
@@ -144,7 +148,7 @@
         </li>
         <li class="nav-item mx-5" role="presentation">
           <a
-            class=""
+            class="text-decoration-none text-black botton-tab"
             id="pills-profile-tab"
             data-bs-toggle="pill"
             data-bs-target="#pills-profile"
@@ -158,7 +162,7 @@
         </li>
         <li class="nav-item mx-5" role="presentation">
           <a
-            class=""
+            class="text-decoration-none text-black botton-tab"
             id="pills-contact-tab"
             data-bs-toggle="pill"
             data-bs-target="#pills-contact"
@@ -293,10 +297,10 @@
 
     <section class="container my-5">
       <div class="row">
-        <div class="col-md-4">
-          <div class="cardt">
+        <div class="col-md-4 px-4">
+          <div class="cardt pt-3">
             <img
-              class="mx-auto d-block p-3"
+              class="mx-auto d-block p-4"
               src="images/logo-chrome.svg"
               alt="logo chrome"
               class="img-fluid"
@@ -304,10 +308,14 @@
             />
             <div class="card-body text-center p-5">
               <h3>Add to Chrome</h3>
-              <p>Minimum version 62</p>
-              <img class="image-fluid" src="images/bg-dots.svg" alt="" />
+              <p class="fs-2 grayishBlue">Minimum version 62</p>
+              <img
+                class="image-fluid py-5 w-100"
+                src="images/bg-dots.svg"
+                alt=""
+              />
 
-              <button class="btn btn-primary w-100">
+              <button class="btn btn-primary w-100 py-3 fs-4 fw-bold">
                 Add & Install Extension
               </button>
             </div>
@@ -315,10 +323,10 @@
         </div>
 
         <!-- // -->
-        <div class="col-md-4">
-          <div class="cardt mt-5">
+        <div class="col-md-4 px-4">
+          <div class="cardt mt-5 pt-3">
             <img
-              class="mx-auto d-block p-3"
+              class="mx-auto d-block p-4"
               src="images/logo-firefox.svg"
               alt="logo chrome"
               class="img-fluid"
@@ -326,10 +334,14 @@
             />
             <div class="card-body text-center p-5">
               <h3>Add to Firefox</h3>
-              <p>Minimum version 62</p>
-              <img class="image-fluid" src="images/bg-dots.svg" alt="" />
+              <p class="fs-2 grayishBlue">Minimum version 55</p>
+              <img
+                class="image-fluid py-5 w-100"
+                src="images/bg-dots.svg"
+                alt=""
+              />
 
-              <button class="btn btn-primary w-100">
+              <button class="btn btn-primary w-100 py-3 fs-4 fw-bold">
                 Add & Install Extension
               </button>
             </div>
@@ -338,10 +350,10 @@
 
         <!-- // -->
 
-        <div class="col-md-4 align-self-end mt-5">
-          <div class="cardt mt-5">
+        <div class="col-md-4 mt-5 px-4">
+          <div class="cardt mt-5 pt-3">
             <img
-              class="mx-auto d-block p-3"
+              class="mx-auto d-block p-4"
               src="images/logo-opera.svg"
               alt="logo chrome"
               class="img-fluid"
@@ -349,9 +361,15 @@
             />
             <div class="card-body text-center p-5">
               <h3>Add Opera</h3>
-              <p>Minimum version 62</p>
-              <img class="image-fluid" src="images/bg-dots.svg" alt="" />
-              <button class="btn btn-primary w-100">
+              <p class="fs-2 grayishBlue">Minimum version 46</p>
+
+              <img
+                class="image-fluid py-5 w-100"
+                src="images/bg-dots.svg"
+                alt=""
+              />
+
+              <button class="btn btn-primary w-100 py-3 fs-4 fw-bold">
                 Add & Install Extension
               </button>
             </div>
@@ -378,7 +396,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
-              class="accordion-button"
+              class="accordion-button titleAccordion fs-3 bg-white"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -394,7 +412,7 @@
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class="accordion-body fs-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
               quis quam ornare mattis.
@@ -404,7 +422,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button titleAccordion collapsed bg-white fs-3"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseTwo"
@@ -420,7 +438,7 @@
             aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class="accordion-body fs-4">
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue
               massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
               eros aliquet convallis ultricies. Mauris augue massa, ultricies
@@ -433,7 +451,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button titleAccordion collapsed bg-white fs-3"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseThree"
@@ -449,7 +467,7 @@
             aria-labelledby="headingThree"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class="accordion-body fs-4">
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus
               vestibulum dolor, ut condimentum urna vulputate eget. Cras in
               ligula quis est pharetra mattis sit amet pharetra purus. Sed
@@ -460,7 +478,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button titleAccordion collapsed bg-white fs-3"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsefour"
@@ -476,7 +494,7 @@
             aria-labelledby="headingfour"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class="accordion-body fs-4">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
               placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
               pellentesque non ut velit.
@@ -484,7 +502,9 @@
           </div>
         </div>
         <div class="text-center m-5">
-          <button class="btn btn-primary">More Info</button>
+          <button class="btn btn-primary py-3 px-5 fs-4 rounded">
+            More Info
+          </button>
         </div>
       </div>
     </section>
@@ -492,7 +512,7 @@
     <!-- ----------------------   fin seccion 6---------------- -->
     <!-- ----------------------------------------------- -->
     <!-- ----------------------    seccion 7---------------- -->
-    <section class="bg-primary m p-5">
+    <section id="contact" class="bg-primary m p-5">
       <div class="container-fluid text-center text-white p-5">
         <p class="fs-3">35,000+ already joined</p>
         <h3 class="py-3">
@@ -500,10 +520,21 @@
           we’re doing
         </h3>
 
-        <div class="w-auto d-block">
-          <input type="text" class="px-5" />
-          <button class="btn btn-danger px-5">Contact US</button>
-        </div>
+        <form id="mostarAlert" class="w-auto d-block">
+          <input
+            id="inputContact"
+            type="text"
+            class="px-5 text-center fs-5"
+            placeholder="Ingrese Correo"
+          />
+          <button
+            id="buttonContact"
+            type="button"
+            class="btn btn-danger my-3 px-5"
+          >
+            Contact US
+          </button>
+        </form>
       </div>
     </section>
     <!-- ----------------------   fin seccion 7---------------- -->
@@ -520,25 +551,33 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-uppercase text-white mx-4"
+                  class="nav-link active text-uppercase text-white hover-red mx-4"
                   aria-current="page"
                   href="#"
                   >Features</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase text-white mx-4" href="#"
+                <a
+                  class="nav-link text-uppercase text-white hover-red mx-4"
+                  href="#"
                   >Pricing</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase text-white mx-4" href="#"
+                <a
+                  class="nav-link text-uppercase text-white hover-red mx-4"
+                  href="#"
                   >contact</a
                 >
               </li>
             </ul>
             <span class="navbar-brand">
-              <img class="mx-4" src="images/icon-facebook.svg" alt="" />
+              <img
+                class="mx-4 hover-red"
+                src="images/icon-facebook.svg"
+                alt=""
+              />
               <img class="mx-4" src="images/icon-twitter.svg" alt="" />
             </span>
           </div>
@@ -546,8 +585,10 @@
       </nav>
     </footer>
     <!-- ----------------------   fin seccion 8---------------- -->
+
     <!-- ----------------------------------------------- -->
 
     <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>

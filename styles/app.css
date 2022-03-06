@@ -73,6 +73,14 @@ h3 {
 .bg-danger {
   background-color: var(--softRed) !important;
 }
+.btn-danger {
+  background-color: var(--softRed) !important;
+}
+.btn-danger:hover {
+  background-color: white !important;
+  color: var(--softRed) !important;
+  border: 0.15rem solid var(--softRed);
+}
 .bg-primary {
   background-color: var(--softBlue) !important;
 }
@@ -94,4 +102,68 @@ h3 {
 .relativeq {
   top: 1;
   z-index: 1;
+}
+
+.tabs-links {
+  padding: 1rem 0;
+  border-bottom: 1pixel solid var(--grayishBlue) !important;
+}
+
+.botton-tab {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--grayishBlue) !important;
+}
+.botton-tab:hover {
+  border-bottom: 4px solid var(--softRed) !important;
+  color: var(--softRed) !important;
+}
+
+.btn-login {
+  background-color: var(--softRed);
+  border-radius: 0.5rem;
+  color: white !important;
+}
+.btn-login:hover {
+  background-color: white !important;
+  border: 1.5px solid var(--softRed);
+  border-radius: 0.5rem;
+  color: var(--softRed) !important;
+}
+
+.btnhov:hover {
+  color: var(--softRed) !important;
+}
+.btn-primary:hover {
+  background-color: white !important;
+  color: var(--softBlue) !important;
+  border: 1.5px solid var(--softBlue) !important;
+}
+
+.btn-white:hover {
+  background-color: white !important;
+  color: var(--veryDarkBlue) !important;
+  border: 1.5px solid var(--veryDarkBlue) !important;
+}
+
+.titleAccordion {
+  color: var(--veryDarkBlue) !important;
+}
+
+.titleAccordion:hover {
+  color: var(--softRed) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/images/arrow-down-sign-to-navigate.png);
+  transform: rotate(-180deg);
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.01rem black;
+}
+
+.hover-red:hover {
+  color: var(--softRed) !important;
 }
