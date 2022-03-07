@@ -9,7 +9,7 @@ html {
   font-size: 62.5%; /*1 rem = 10px*/
 }
 body {
-  font-size: 1, 8rem;
+  font-size: 1.8rem;
   font-family: 'Rubik', sans-serif;
   line-height: 1.5;
   color: var(--veryDarkBlue) !important;

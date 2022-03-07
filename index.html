@@ -18,7 +18,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./images/logo-bookmark.svg"
     />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/app.css" />
@@ -29,7 +29,7 @@
     <header class="container my-5">
       <nav class="navbar navbar-expand-lg navbar-light text-center">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><img src="images/logo-bookmark.svg" alt=""
           /></a>
           <button
@@ -59,14 +59,14 @@
               <li class="nav-item">
                 <a
                   class="nav-link text-uppercase mx-5 verydarkblue btnhov fs-5"
-                  href="#"
+                  href="#pricing"
                   >Pricing</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link text-uppercase mx-5 verydarkblue btnhov fs-5"
-                  href="#contact"
+                  href="contact.html"
                   >contact</a
                 >
               </li>
@@ -88,7 +88,7 @@
     <!-- ----------------------seccion 1 ---------------- -->
     <main class="container-fluid py-5">
       <div class="row g-0 pt-5">
-        <div class="col-md-6 p-5 d-flex flex-column justify-content-start">
+        <div class="col-md-6 p-3 d-flex flex-column justify-content-start">
           <h1 class="display-2 fw-bold ms-5 ps-5">A Simple Bookmark Manager</h1>
           <p class="fs-3 grayishBlue ms-5 ps-5 mb-5 fs-5">
             A clean and simple interface to organize your favourite <br />
@@ -295,7 +295,7 @@
     <!-- ----------------------------------------------- -->
     <!-- ----------------------  seccion 5--------------- -->
 
-    <section class="container my-5">
+    <section id="pricing" class="container my-5">
       <div class="row">
         <div class="col-md-4 px-4">
           <div class="cardt pt-3">
@@ -527,17 +527,19 @@
             class="px-5 text-center fs-5"
             placeholder="Ingrese Correo"
           />
-          <button
-            id="buttonContact"
-            type="button"
+          <a
+            id="aContact"
             class="btn btn-danger my-3 px-5"
+            href="contact.html"
+            target="_blank"
           >
             Contact US
-          </button>
+          </a>
         </form>
       </div>
     </section>
     <!-- ----------------------   fin seccion 7---------------- -->
+
     <!-- ----------------------------------------------- -->
     <!-- ----------------------    seccion 8---------------- -->
     <footer class="bg-footer py-3">
