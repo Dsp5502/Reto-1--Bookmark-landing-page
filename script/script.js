@@ -50,8 +50,8 @@ const alertDone = () => {
 };
 
 const evaluar = (email) => {
-  const expCorreo = /^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
-
+  const expCorreo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+  expCorreo.lastIndex = 0;
   let evaluada = !expCorreo.test(email) ? false : true;
   return evaluada;
 };
